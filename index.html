@@ -46,28 +46,45 @@
 
         <div class="col-3">
 
-          <div class="row">
+          <div class=" my-2">
 
-            <div class="col-12">
+            <div class=" my-3 p-2 border border-bottom-3 border-color-light rounded text-light">
+              <form onsubmit="app.sandboxesController.createGift()">
+                <div class="mb-3">
+                  <label for="tag" class="form-label"></label>
+                  <input type="text" class="form-control" name="tag" id="tag" aria-describedby="helpId" placeholder="What's the tag">
 
-              <div class="background-light rounded shadow m-2 p-3">
-                <input type="text" placeholder="tag">
-              </div>
+                  <div class="mb-3">
+                    <label for="gif-url" class="form-label"></label>
+                    <input type="text" class="form-control" name="url" id="url" aria-describedby="helpId" placeholder="Gif Url">
+                    <small id="helpId" class="form-text text-muted">It Autofills!</small>
+                  </div>  
+                </div>
+
+                <button class="btn btn-secondary" type="submit">Submit</button>
+              </form>
             </div>
 
-            <div class="col-12">
-
-              <div class="background-light rounded shadow m-2 p-3">
-                <input type="text" placeholder="tag">
-              </div>
+            <form onsubmit="app.gifsController.getGif()">
+            <div class="mb-3">
+              <label for="" class="form-label"></label>
+              <input type="text" required class="form-control" name="gifSearch" id="gifSearch" aria-describedby="helpId" placeholder="search for A GIF">
             </div>
+            <button class="btn btn-secondary" type="submit">Search</button>
+            </form>
 
-            <div class="col-12">
+          </div>
+          <div id="search-result"class="row">
 
-              <div class="background-light rounded shadow m-2 p-3">
-                <input type="text" placeholder="tag">
+
+            <!-- <div class="col-12 my-1">
+
+              <div class="m-1 p-1 bg-light">
+                <img src="${this.url}" alt="">
               </div>
-            </div>
+
+            </div> -->
+
           
           
           </div>
@@ -75,28 +92,9 @@
         </div>
 
         <div class="col-9">
-          <div class="row">
+          <div id="gifts" class="row">
             
-            <div class="col-4">
-              <div class="bg-light rounded shadow m-3 p-2">
-                <h1>gift</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod omnis quibusdam vitae quisquam facere numquam eius blanditiis minus dolores enim.</p>
-              </div>
-            </div>
-
-            <div class="col-4">
-              <div class="bg-light rounded shadow m-3 p-2">
-                <h1>gift</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod omnis quibusdam vitae quisquam facere numquam eius blanditiis minus dolores enim.</p>
-              </div>
-            </div>
-
-            <div class="col-4">
-              <div class="bg-light rounded shadow m-3 p-2">
-                <h1>gift</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod omnis quibusdam vitae quisquam facere numquam eius blanditiis minus dolores enim.</p>
-              </div>
-            </div>
+          
 
             <div class="col-4">
               <div class="bg-light rounded shadow m-3 p-2">
