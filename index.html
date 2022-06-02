@@ -10,10 +10,27 @@
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
-  <title>gifted</title>
+  <title>Gifted</title>
+  <style>
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+  
+    body.debug .row {
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+  
+    body.debug [class*="col-"] {
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
 </head>
 
-<body>
+<body class="bg-dark debug">
   <header>
     <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
       <a class="navbar-brand ms-3" href="#">
@@ -26,8 +43,77 @@
   <main>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
+
+        <div class="col-3">
+
+          <div class="row">
+
+            <div class="col-12">
+
+              <div class="background-light rounded shadow m-2 p-3">
+                <input type="text" placeholder="tag">
+              </div>
+            </div>
+
+            <div class="col-12">
+
+              <div class="background-light rounded shadow m-2 p-3">
+                <input type="text" placeholder="tag">
+              </div>
+            </div>
+
+            <div class="col-12">
+
+              <div class="background-light rounded shadow m-2 p-3">
+                <input type="text" placeholder="tag">
+              </div>
+            </div>
+          
+          
+          </div>
+
+        </div>
+
+        <div class="col-9">
+          <div class="row">
+            
+            <div class="col-4">
+              <div class="bg-light rounded shadow m-3 p-2">
+                <h1>gift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod omnis quibusdam vitae quisquam facere numquam eius blanditiis minus dolores enim.</p>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="bg-light rounded shadow m-3 p-2">
+                <h1>gift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod omnis quibusdam vitae quisquam facere numquam eius blanditiis minus dolores enim.</p>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="bg-light rounded shadow m-3 p-2">
+                <h1>gift</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod omnis quibusdam vitae quisquam facere numquam eius blanditiis minus dolores enim.</p>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="bg-light rounded shadow m-3 p-2">
+                <h1>Title</h1>
+                <p>click to open</p>
+              </div>
+            </div>
+
+            <div class="col-4">
+              <div class="bg-light rounded shadow m-3 p-2 text-center">
+                <img class="img-fluid" src="https://media.giphy.com/media/b8RfbQFaOs1rO10ren/giphy.gif" alt="">
+                <p>The Tag that was written</p>
+              </div>
+            </div>
+
+
+          </div>
         </div>
       </div>
     </div>
@@ -38,6 +124,7 @@
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js" ></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
     crossorigin="anonymous"></script>
